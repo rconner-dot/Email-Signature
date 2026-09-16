@@ -9,7 +9,6 @@ reid-signature/
 ├── api/
 │   └── signature.tsx          ← The function that makes the image
 ├── package.json               ← Dependencies
-├── vercel.json                ← Vercel config
 └── README.md                  ← This file
 ```
 
@@ -52,7 +51,14 @@ reid-signature/
 5. Click **Insert**
 6. Click **Save Changes** at the bottom
 
-Done. Your signature now rotates a new status line every hour and regenerates fresh on each email.
+Done. Your signature is a clean white card with your name, title, and a status
+line that rotates automatically every hour. Since it's a live image (not a
+static picture), every recipient loads the current version.
+
+**Gmail caching note:** Gmail proxies signature images through its own
+servers and can hold onto a cached copy for a while instead of re-fetching
+every hour on the dot. You'll still see it refresh over time, just not
+necessarily on a strict hourly clock.
 
 ## Tweaking the status lines
 
@@ -60,16 +66,10 @@ Edit `api/signature.tsx` and change the `STATUSES` array to add/remove messages:
 
 ```javascript
 const STATUSES = [
-  '$ your status here',
-  '$ another status',
-  '$ etc',
+  'your status here',
+  'another status',
+  'etc',
 ];
 ```
 
 Push to GitHub and Vercel auto-redeploys (~1 minute).
-
-## Live FenWorks data (optional)
-
-Once you have your Tribe Bytes team ID from https://app.fenworks.com/, I can
-wire in live tournament standings so the status line shows real-time comp data
-instead of rotating messages. Let me know.
