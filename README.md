@@ -51,9 +51,10 @@ reid-signature/
 5. Click **Insert**
 6. Click **Save Changes** at the bottom
 
-Done. Your signature is a clean white card with your name, title, and a status
-line that rotates automatically every hour. Since it's a live image (not a
-static picture), every recipient loads the current version.
+Done. Your signature shows your name, title, and school, the FRC 4020 and
+Tribe Bytes badges, and a status/quote line that rotates automatically every
+hour. Since it's a live image (not a static picture), every recipient loads
+the current version.
 
 **Gmail caching note:** Gmail proxies signature images through its own
 servers and can hold onto a cached copy for a while instead of re-fetching
