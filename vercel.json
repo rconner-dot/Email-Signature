@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/signature.tsx": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
